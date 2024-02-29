@@ -1,0 +1,217 @@
+[10-Dec-2023 22:08:29 Asia/Taipei] [none]錯誤[42S22]:  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sPer' in 'field list' in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [admroot]()[pages/end_manager_data/php/_end_manager_data_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/EndTest/pages/end_manager_data/php/_end_manager_data_0.php(139): sql_query()
+#2 /var/www/html/gino/project/EndTest/inc/#IsLogin.php(196): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(11): require_once('...')
+#4 {main}
+[10-Dec-2023 22:09:40 Asia/Taipei] [none]警告:  Undefined array key "BANKERPLUSFEE" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 78  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[10-Dec-2023 22:09:40 Asia/Taipei] [none]警告:  Undefined array key "nBetPeople" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 97  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[10-Dec-2023 22:09:40 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 98  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[10-Dec-2023 22:09:40 Asia/Taipei] [none]錯誤[8192]:  round(): Passing null to parameter #1 ($num) of type int|float is deprecated in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 98  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[10-Dec-2023 22:09:40 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 112  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[10-Dec-2023 22:09:40 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 112  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[10-Dec-2023 22:12:21 Asia/Taipei] [none]錯誤[8192]:  mb_strlen(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/gino/project/System/System/Set_Ctrl.php on line 110  [admroot]()[pages/client_user_data/php/_client_user_link_0.php]
+[15-Dec-2023 11:20:48 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[15-Dec-2023 11:20:48 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[17-Dec-2023 02:41:04 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[17-Dec-2023 02:41:07 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[17-Dec-2023 02:41:08 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[17-Dec-2023 02:41:08 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[17-Dec-2023 02:41:09 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[17-Dec-2023 02:44:31 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.sys_param' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(53): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[02-Jan-2024 16:04:45 Asia/Taipei] [none]警告:  Undefined array key "BANKERPLUSFEE" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 78  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:45 Asia/Taipei] [none]警告:  Undefined array key "nBetPeople" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 97  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:45 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 98  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:45 Asia/Taipei] [none]錯誤[8192]:  round(): Passing null to parameter #1 ($num) of type int|float is deprecated in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 98  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:45 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 112  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:45 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 112  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:53 Asia/Taipei] [none]警告:  Undefined array key "BANKERPLUSFEE" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 78  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:53 Asia/Taipei] [none]警告:  Undefined array key "nBetPeople" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 97  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:53 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 98  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:53 Asia/Taipei] [none]錯誤[8192]:  round(): Passing null to parameter #1 ($num) of type int|float is deprecated in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 98  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:53 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 112  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[02-Jan-2024 16:04:53 Asia/Taipei] [none]警告:  Undefined array key "nRealWin" in /var/www/html/gino/project/EndTest/pages/end_report/html_v1/end_report_0.php on line 112  [admroot]()[pages/end_report/html_v1/end_report_0.php]
+[11-Jan-2024 15:26:34 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[11-Jan-2024 15:26:34 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[11-Jan-2024 17:10:56 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[12-Jan-2024 23:04:22 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[12-Jan-2024 23:04:22 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[15-Jan-2024 10:43:08 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[15-Jan-2024 10:43:08 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[18-Jan-2024 10:44:28 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[18-Jan-2024 10:44:28 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[23-Jan-2024 01:38:38 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[23-Jan-2024 10:11:56 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[23-Jan-2024 10:11:56 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[24-Jan-2024 20:25:16 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[24-Jan-2024 20:25:16 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[26-Jan-2024 15:20:17 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[26-Jan-2024 15:20:19 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[01-Feb-2024 18:18:47 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[01-Feb-2024 18:18:47 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[04-Feb-2024 00:40:50 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[04-Feb-2024 00:40:50 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[07-Feb-2024 01:10:57 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[07-Feb-2024 01:11:01 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[29-Feb-2024 20:26:25 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}
+[29-Feb-2024 20:26:25 Asia/Taipei] [none]錯誤[42S02]:  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.end_menu_kind' doesn't exist in /var/www/html/gino/project/System/Connect/BaseCtrl.php on line 61  [ ]()[pages/index/php/_index_0.php] 
+Stack trace:#0 /var/www/html/gino/project/System/Connect/BaseCtrl.php(61): PDOStatement->execute()
+#1 /var/www/html/gino/project/System/Connect/BaseSetting1.php(14): sql_query()
+#2 /var/www/html/gino/project/System/ConnectBase.php(49): require_once('...')
+#3 /var/www/html/gino/project/EndTest/index.php(9): require_once('...')
+#4 {main}

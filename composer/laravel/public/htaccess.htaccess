@@ -1,0 +1,18 @@
+# 使用./或是../  在rewrite可以  但是if不行
+set $flag 0;
+# 如果找不到檔案路徑
+if (!-e $request_filename){
+    set $flag "${flag}1";
+}
+# 如果網址是資料夾
+if ($request_uri ~ (.+)/$){
+    set $flag "${flag}2";
+}
+# 如果找不到網址檔案路徑就直接找那個網址的資料夾
+if ($flag = "01") {
+    rewrite ^(.*)$ ./ redirect ;
+}
+# 如果找不到檔案路徑,且網址已經是資料夾
+if ($flag = "012") {
+    rewrite ^(.*)$ /index.php redirect ;
+}

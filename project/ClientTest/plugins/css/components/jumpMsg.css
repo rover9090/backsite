@@ -1,0 +1,235 @@
+/*
+	2021/01/18 V01
+*/
+/*****     彈跳視窗     *****/
+.jumpMsgBox
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 200;
+	display: none;
+}
+
+.jumpMsgBox.active
+{
+	display: block;
+}
+
+.jumpMsgContainer /*     整個背景顏色     */
+{
+	background-image: linear-gradient(to bottom, #1a1a1a 0%,#534741 100%),
+				linear-gradient(45deg, #74450e 0%,#a37a3d 16%,#d8b87a 34%,#7b4d15 63%,#b18b4d 77%,#fbebc6 100%);
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,.6);
+	width: 400px;
+	max-height: 600px;
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	border: solid 3px transparent;
+	background-origin: border-box;
+	background-clip: padding-box, border-box;
+}
+
+.jumpMsgInner
+{
+	width: 100%;
+}
+
+.jumpMsgTop /*     標題背景顏色     */
+{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 10px 10px 0 0;
+}
+
+.jumpMsgTop::after
+{
+	background: linear-gradient(to right, #FDE8B3 0%,#CA9B47 20%,#EDD793 60%,#735638 100%);
+	text-shadow: 1px 1px black;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+}
+
+.jumpMsgTit /*     標題文字顏色     */
+{
+	background: linear-gradient(to bottom, #F8E1A8 0%,#AF842C 100%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	filter: drop-shadow(1px 1px 0 black);
+	width: calc(100% - 20px);
+	padding: 11px 10px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.jumpMsgContent
+{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px 20px;
+	max-height: 422px;
+	overflow-y: scroll;
+	word-break: break-all;
+	position: relative;
+}
+
+.jumpMsgContent::-webkit-scrollbar
+{
+	/* background-color: #333333; */
+	width: 6px;	
+}
+
+.jumpMsgContent::-webkit-scrollbar-thumb
+{
+	background-color: #646464;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);	
+	width: 6px;
+	border-radius: 999rem;	
+}
+
+.jumpMsgContent img
+{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.jumpMsgIcon
+{
+	color: white;
+	width: 100%;
+	font-size: 40px;
+	text-align: center;
+}
+
+.jumpMsgContentTxt /* 訊息文字 */
+{
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.jumpMsgContentArticle /* 多文字訊息 */
+{
+	color: white;
+	word-break: break-all;
+}
+
+.jumpMsgContentArticle > div:not(:last-child)
+{
+	margin: 0 0 5px 0;
+}
+
+.jumpMsgBtnBox
+{
+	width: 100%;
+}
+
+.jumpMsgBtnCell
+{
+	width: 50%;
+	min-width: 50%;
+	max-width: 50%;
+	padding: 0;
+}
+
+.jumpMsgBtn /*     一般按鈕背景顏色     */
+{
+	background: linear-gradient(to bottom, #FBEBC6 0%,#D0AD6A 100%);
+	display: block;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	box-sizing: border-box;
+}
+
+.jumpMsgBtnCell:first-child .jumpMsgBtn.noOne
+{
+	border-right: .5px solid #735638;
+	border-radius: 0 0 0 10px;
+}
+
+.jumpMsgBtnCell:last-child .jumpMsgBtn.noOne
+{
+	border-left: .5px solid #735638;
+	border-radius: 0 0 10px 0;
+}
+
+.jumpMsgBtn.cancel /*     取消,否定...按鈕背景顏色     */
+{
+	background: linear-gradient(to bottom, #C1272D 0%,#7A0009 100%);
+	display: block;
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	box-sizing: border-box;
+}
+
+.jumpMsgBtnTxt /*     一般按鈕文字顏色     */
+{
+	color: #000000;
+	display: block;
+	padding: 15px 0;
+	width: 100%;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.jumpMsgBtn.cancel .jumpMsgBtnTxt /*     取消,否定...按鈕文字顏色     */
+{
+	color: white;
+	display: block;
+	padding: 15px 0;
+	width: 100%;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.jumpMsgBg
+{
+	background: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+@media screen and (max-width:1179px)
+{
+	.jumpMsgContainer
+	{
+		width: calc(100% - 30px);
+		max-height: 300px;
+	}
+
+	.jumpMsgContent
+	{
+		max-height: 350px;
+	}
+
+	.jumpMsgContent img
+	{
+		width: 90%;
+	}
+}
+
+@media screen and (min-width:768px)
+{
+	.jumpMsgContainer
+	{
+		width: 400px !important;
+	}
+}

@@ -1,0 +1,33 @@
+<?php
+	define('aJSDEFINE',array(
+		'SERVICE'		=> '客服人员',
+		'SUBMIT'		=> '提交',
+		'COPYSUCCESS'	=> '複製成功',
+		'Pc_OPENROOM'	=> '[:TIME:]开放',
+		'Mobile_OPENROOM'	=> '[:TIME:]开放',
+		'RIGHTMSG'		=> '确认消息',
+		'ERRORMSG'		=> '错误消息',
+		'CONFIRM'		=> '确认',
+		'NOTICE'		=> '临时通知',
+
+		'ENTEROTHER'	=> '已进入其他房间',
+		'IDLE10MIN'		=> '閒置超过10分并未投注',
+		'BANMESSAGE'	=> '已被管理员禁言',
+		'CHARGEFIRST'	=> '请先充值额度',		
+		'BKCELL'		=> '庄',
+		'PLCELL'		=> '闲',
+		'DWCELL'		=> '和',
+		'IDS'			=> '单号',
+		'GAMENAME'		=> '游戏名',
+		'ROOM'		=> '桌号',
+		'BETTIME'		=> '下注时间',
+		'SETTLETIME'	=> '结算时间',
+		'BETMONEY'		=> '下注金额',
+		'WINMONEY'		=> '中奖金额',
+		'BETCONTENT'	=> '下注内容',
+		'GAMERESULT'	=> '游戏结果',
+		'CARDRESULT'	=> '牌型',
+		'PLAYER'		=> '闲',
+		'BANKER'		=> '庄',
+	));
+?>

@@ -1,0 +1,152 @@
+$mainTitleHeight: 56px;
+$loginFormWidth: 360px;
+
+$mainColor: #0097A7;
+$textColor: #FFF;
+//背景顏色
+$BackWhiteColor: #FFFFFF;
+$BackWhiteColor2: #FAFAFA;
+$lightgrayColor: #A7A7A7;
+
+$mainFont: 24px;
+$mainFont2: 16px;
+$toolBarFont: 16px;
+$loginTitleFont: 32px;
+$formMainFont: 20px;
+$formTextBoxTextFont: 16px;
+$formTextBoxBorderFont: 40px;
+
+$mainLeftMargin: 24px;
+
+
+
+//上面Bar的樣式
+.toolbar_section{
+    height: $mainTitleHeight;
+    background: $mainColor;
+
+    .toolbar_title{
+        line-height: $mainTitleHeight;
+        font-size: $mainFont;
+        margin-left: $mainLeftMargin;
+        color: $textColor;
+    }
+
+    .toolbar_title2{
+        line-height: $mainTitleHeight;
+        font-size: $mainFont2;
+        margin-left: $mainLeftMargin;
+        color: $textColor;
+    }
+
+    .toolbar_right{
+        float: right;
+        height: $mainTitleHeight;
+        margin-right: 24px;
+        font-size: $toolBarFont;
+    }
+
+    .toolbar_text{
+        margin-left: 12px;
+        color: $textColor;
+        line-height: $mainTitleHeight;
+    }
+}
+
+//登入表單
+.login_form{
+    width: $loginFormWidth;
+    margin: autto;
+
+    .login_title{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: $loginTitleFont;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .login_label{
+        font-size: $formMainFont;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .login_textbox{
+        font-size: $formTextBoxTextFont;
+        line-height: $formTextBoxBorderFont;
+        margin-bottom: 20px;
+        .form_textbox{
+            padding-left: 12px;
+        }
+    }
+
+    .btn_group{
+        text-align: right;
+        .btn_login{
+            font-size: $formMainFont;
+            height: 40px;
+            width: 120px;
+            color: $textColor;
+            box-shadow: none;
+            border-radius: 3px;
+            border-width: 0;
+            background: $mainColor;
+        }
+    }
+}
+
+
+.background_white {
+    min-height: calc(100vh - #{$mainTitleHeight});
+    background: $BackWhiteColor;
+}
+
+.background_white2 {
+    min-height: calc(100vh - #{$mainTitleHeight});
+    background: $BackWhiteColor2;
+}
+
+
+/****************改變Bootstrap樣式****************/
+
+
+.container {
+    width: 100vw;
+    padding: 0;
+    background: $BackWhiteColor2;
+}
+
+//排版
+.form.col-sm-1 {
+    padding: 0;
+}
+
+//選單
+.nav-pills>li{
+
+    &>a{
+        border-radius: 0;
+        color: $lightgrayColor;
+        font-size: $formTextBoxTextFont;
+
+        &:hover{
+            background: #E9E9E9;
+        }
+    }
+
+    &.active{
+        border-right: solid 4px $mainColor;
+
+        &>a, {
+            color: $mainColor;
+            background: transparent;
+
+            &:hover{
+                color: $mainColor;
+                background: #E9E9E9;
+            }
+        }
+    }
+
+}

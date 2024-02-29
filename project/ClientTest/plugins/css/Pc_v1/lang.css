@@ -1,0 +1,128 @@
+*
+{
+	word-break: break-word;
+}
+
+/*****     共用零件     *****/
+.GameTxt
+{
+	font-size: 20px;
+}
+
+/**    中間字幕      **/
+.gameCenterTxt
+{
+	font-size: 40px;
+}
+
+/*****     Header     *****/
+.headerMenuTd
+{
+	color: #D8B87A;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/*****     Nav     *****/
+.navInfoBlock
+{
+	font-size: .937vw;
+}
+
+.navMenuTxt
+{
+	font-size: 1.14vw;
+}
+
+.navShowBox .bigBtnTxt
+{
+	font-size: 1.04vw;
+}
+
+/*     館別     */
+.indexRoomBox
+{
+	width: fit-content;
+}
+
+.indexCountTxt
+{
+	font-size: 18px;
+}
+
+.indexCountBox
+{
+	padding: 8px 5px;
+}
+
+.indexGameInfoBlock:not(:last-child)
+{
+	margin: 0 20px 0 0;
+}
+
+.indexGameInfoTit
+{
+	font-size: 1.3vw;
+}
+
+/**    遊戲資訊      **/
+.betInfoList
+{
+	padding: .26vw;
+}
+
+.betInfoTit
+{
+	width: 3.6vw;
+	/* font-size: .937vw; */
+	word-break: normal;
+	padding: 0 .26vw 0 0;
+}
+
+.betInfoVal
+{
+	font-size: .937vw;
+}
+
+.gameInfoDetailBlock
+{
+	padding: .52vw .2vw;
+}
+
+.gameInfoDetailBlock div:first-child
+{
+	font-size: .833vw;
+}
+
+/**    遊戲左上選單      **/
+.gameMenuTxt
+{
+	font-size: .833vw;
+	top: calc(50% + 1px);
+}
+
+/**    開牌區      **/
+.gameCardTitTd.second .gameCardTit
+{
+	padding: 0 0 0 52px;
+}
+
+/*     押號碼區     */
+.gambleOptNumBox .gambleOptBlockTxt
+{
+	font-size: 1.04vw;
+}
+
+/*    下注控制      */
+.betCtrlBtnIcon
+{
+	/* display: none; */
+}
+
+.betCtrlBtnTxt
+{
+	word-break: normal;
+	font-size: 14px;
+}
+
+

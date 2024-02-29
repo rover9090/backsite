@@ -1,0 +1,363 @@
+.Ipt input::placeholder
+{
+	font-size: 12px;
+}
+
+/*     彈窗     */
+.WindowTit
+{
+	font-size: 14px;
+}
+
+.WindowCancelTd
+{
+	width: 25px;
+}
+
+.WindowCancel
+{
+	font-size: 18px;
+}
+
+/*****     共用零件     *****/
+/*     按鈕     */
+.submitBtn
+{
+	min-width: 120px;
+}
+
+/*****     共用零件     *****/
+.LftTop
+{
+	top: 1px;
+}
+
+.LftBot
+{
+	bottom: 1px;
+}
+
+.RgtTop
+{
+	top: 1px;
+}
+
+.RgtBot
+{
+	bottom: 1px;
+}
+
+/*     大外框     */
+.Container
+{
+	padding: 104px 0 104px;
+}
+
+.Container.NoMenu
+{
+	padding: 94px 10px 80px;
+}
+
+.ContainerHasMenu
+{
+	padding: 0 10px 0;
+}
+
+/*     子選單     */
+.MenuTd::after
+{
+	height: 5px;
+}
+
+.MenuTit
+{
+	font-size: 12px;
+	padding: 15px 15px;
+}
+
+.MenuTable.index .MenuTit
+{
+	min-width: 70px;
+}
+
+/*****     Header     *****/
+.headerlogoutBox
+{
+	width: 100px;	
+	height: 86px;
+}
+
+.headerlogoutBtn
+{
+	width: 35px;
+}
+
+.headerImgBox
+{
+	width: 45px;
+	right: -28px;
+}
+
+.headerPersonalBox
+{
+	width: calc(100% - 150px);
+}
+
+.headerInfoBox
+{
+	width: calc(100% - 35px);
+	margin: 0 10px 0 0;
+}
+
+.headerRecordBox
+{
+	width: 30px;
+}
+
+/*     跑馬燈     */
+.marqueeBox
+{
+	top: 73px;
+}
+
+/*****     index     *****/
+/*     圖     */
+.indexGameContImg
+{
+	width: 80px;
+}
+
+/*     大小路     */
+.indexDataBox
+{
+	width: calc(100% - 80px);
+}
+
+/*****     下注     *****/
+/*    選單      */
+.betMenuSubBox
+{
+	width: 160px;
+}
+
+.betMenuSubList
+{
+	padding: 5px 0;
+}
+
+.betMenuSubListIcon
+{
+	width: 25px;
+}
+
+.betMenuSubListTit, .betMenuSubListArrow
+{
+	font-size: 16px;
+}
+
+/*****     下注區塊 (下注+開牌顯示)     *****/
+/*    籌碼      */
+
+/*        開牌區1      */
+.betFinalInner
+{
+	width: calc(100% - 90px);
+}
+
+.betFinal1Card , .gambleVerCard
+{
+	width: 39px;
+    	height: 52px;
+}
+
+/* 整靴牌 (彈窗) */
+.Window2Box.verall .Window2Content
+{
+	max-height: calc(100vh - 420px);
+}
+
+/*****     換桌     *****/
+.indexMenuBtnTxt
+{
+	font-size: 14px;
+}
+
+.changeMenuBox .indexMenuBtnBox
+{
+	width: calc(100% - 20px);
+}
+
+.changeMenuBtnClose
+{
+	font-size: 14px;
+	width: 20px;
+}
+
+/*****     聲音     *****/
+.WindowContent .soundBox .soundTable
+{
+      border-spacing: 20px 20px;
+}
+
+/*****     限額     *****/
+.limitSetTxt
+{
+	font-size: 12px;
+}
+
+/*****     會員中心     *****/
+.centerBox
+{
+	padding: 10px 0 0 0;
+}
+
+.centerLevelBox
+{
+	margin: 0 0 5px 0;
+}
+
+.centerLevelTxt
+{
+	font-size: 14px;
+}
+
+.centerImgEdt
+{
+	font-size: 14px;
+}
+
+.centerInfoTitTd
+{
+	font-size: 14px;
+}
+
+.centerInfoTit
+{
+	font-size: 14px;
+}
+
+.centerInfoTxtTd, .centerInfoNum
+{
+	font-size: 14px;
+}
+
+.centerInfoIcon
+{
+	font-size: 14px;
+}
+
+/**     更換頭像     **/
+.changeImgBg
+{
+	width: 50px;
+	height: 50px;
+}
+
+.changeImgBlock
+{
+	width: 45px;
+	height: 45px;
+}
+
+/*****     排行榜     *****/
+.rankBox
+{
+	padding: 10px 0 0 0;
+}
+
+.rankTable
+{
+	font-size: 12px;
+	border-spacing: 0 10px;
+}
+
+.rankTh
+{
+	font-size: 12px;
+}
+
+.rankTable td
+{
+	height: 30px;
+}
+
+.rankIconTd
+{
+	width: 30px;
+}
+
+.rankIcon
+{
+	width: 30px;
+}
+
+/*****     關注     *****/
+.attentionBlock
+{
+	padding: 5px 20px;
+}
+
+.attentionImg
+{
+	width: 60px;
+	height: 60px;
+      left: -30px;
+}
+
+.attentionBlock:not(:last-child)
+{
+	margin: 0 0 35px auto;
+}
+
+.attentionImg img
+{
+	width: 60px;
+	height: 60px;
+}
+
+.attentionTable
+{
+	font-size: 14px;
+}
+
+.attentionIcon
+{
+	width: 25px;
+	height: 25px;
+}
+
+/*****     紀錄     *****/
+.recordSelTxt
+{
+	font-size: 12px;
+}
+
+.infoTh
+{
+	font-size: 12px;
+}
+
+.infoTd, .infoTf
+{
+	font-size: 12px;
+}
+
+.infoTd
+{
+	padding: 10px 0;
+}
+
+.infoTd:not(:last-child)
+{
+	padding: 10px 5px 10px 0;
+}
+
+.infoTf
+{
+	padding: 10px 0;
+}
+
+.infoTf:not(:last-child)
+{
+	padding: 10px 10px 10px 0;
+}

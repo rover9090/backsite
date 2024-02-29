@@ -1,0 +1,33 @@
+<?php
+define('aJSDEFINE',array(
+	'SERVICE' =>'Customer Service Staff',
+	'SUBMIT' =>'Submit',
+	'COPYSUCCESS' =>'Copy successful',
+	'Pc_OPENROOM' =>'[:TIME:]Open',
+	'Mobile_OPENROOM' =>'[:TIME:]Open',
+	'RIGHTMSG' =>'Confirmation message',
+	'ERRORMSG' =>'Error message',
+	'CONFIRM' =>'Confirm',
+	'NOTICE' =>'Temporary notice',
+
+	'ENTEROTHER' =>'Already entered another room',
+	'IDLE10MIN' =>'Idle for more than 10 minutes without betting',
+	'BANMESSAGE' =>'Banned by the administrator',
+	'CHARGEFIRST' =>'Please charge the quota first',
+	'BKCELL'		=> 'B',
+	'PLCELL'		=> 'P',
+	'DWCELL'		=> 'T',
+	'IDS'			=> 'ID',
+	'GAMENAME'		=> 'Game Name',
+	'ROOM'		=> 'Room',
+	'BETTIME'		=> 'Bet Time',
+	'SETTLETIME'	=> 'Settle Time',
+	'BETMONEY'		=> 'Bet Money',
+	'WINMONEY'		=> 'Win Money',
+	'BETCONTENT'	=> 'Bet Content',
+	'GAMERESULT'	=> 'Game Result',
+	'CARDRESULT'	=> 'Cards',
+	'PLAYER'		=> 'PLAYER',
+	'BANKER'		=> 'BANKER',
+));
+?>

@@ -1,0 +1,148 @@
+/* $mainTitleHeight: 56px;
+$loginFormWidth: 360px;
+
+$mainColor: #0097A7;
+$textColor: #FFF;
+//背景顏色
+$BackWhiteColor: #FFFFFF;
+$BackWhiteColor2: #FAFAFA;
+$lightgrayColor: #A7A7A7;
+
+$mainFont: 24px;
+$mainFont2: 16px;
+$toolBarFont: 16px;
+$loginTitleFont: 32px;
+$formMainFont: 20px;
+$formTextBoxTextFont: 16px;
+$formTextBoxBorderFont: 40px;
+
+$mainLeftMargin: 24px; */
+
+
+
+/* //上面Bar的樣式 */
+.toolbar_section{
+    height: 56px;
+    background: #0097A7;
+
+    
+}
+.toolbar_section .toolbar_title{
+      line-height: 56px;
+      font-size: 24px;
+      margin-left: 24px;
+      color: #FFF;
+  }
+
+.toolbar_section   .toolbar_title2{
+      line-height: 56px;
+      font-size: 16px;
+      margin-left: 24px;
+      color: #FFF;
+  }
+
+  .toolbar_section  .toolbar_right{
+      float: right;
+      height: 56px;
+      margin-right: 24px;
+      font-size: 16px;
+  }
+
+  .toolbar_section  .toolbar_text{
+      margin-left: 12px;
+      color: #FFF;
+      line-height: 56px;
+  }
+/* //登入表單 */
+.login_form{
+    width: 360px;
+    margin: autto;    
+}
+.login_form .login_title{
+      margin-top: 15px;
+      margin-bottom: 30px;
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center;
+  }
+
+  .login_form  .login_label{
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+  }
+
+  .login_form  .login_textbox{
+      font-size: 16px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      
+  }
+  .login_form  .login_textbox .form_textbox{
+      padding-left: 12px;
+  }
+
+  .login_form  .btn_group{
+      text-align: right;      
+  }
+  .login_form  .btn_group .btn_login{
+      font-size: 20px;
+      height: 40px;
+      width: 120px;
+      color: #FFF;
+      box-shadow: none;
+      border-radius: 3px;
+      border-width: 0;
+      background: #0097A7;
+  }
+
+
+.background_white {
+    min-height: calc(100vh - 56px);
+    background: #FFFFFF;
+}
+
+.background_white2 {
+    min-height: calc(100vh - 56px);
+    background: #FAFAFA;
+}
+
+
+/****************改變Bootstrap樣式****************/
+
+
+.container {
+    width: 100vw;
+    padding: 0;
+    background: #FAFAFA;
+}
+
+/* //排版 */
+.form.col-sm-1 {
+    padding: 0;
+}
+
+/* //選單 */
+.nav-pills>li>a{
+      border-radius: 0;
+      color: #A7A7A7;
+      font-size: 16px;
+
+      
+  }
+  .nav-pills>li>a .nav-pills>li:hover{
+      background: #E9E9E9;
+  }
+  .nav-pills>li.active{
+      border-right: solid 4px #0097A7;
+      
+  }
+  .nav-pills>li.active .nav-pills>li>a {
+      color: #0097A7;
+      background: transparent;      
+  }
+  
+  .nav-pills>li.active .nav-pills>li>a, .nav-pills>li:hover{
+      color: #0097A7;
+      background: #E9E9E9;
+  }

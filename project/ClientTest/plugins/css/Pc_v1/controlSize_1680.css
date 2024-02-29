@@ -1,0 +1,25 @@
+.marqueeBox 
+{
+      width: 1100px;
+}
+
+.indexBox 
+{
+      padding: 100px 0 0 200px;
+}
+
+.gameCardBox 
+{
+      width: 400px;
+      right: 85px;
+}
+
+.gameMenuBox 
+{
+      right: 10px;
+}
+
+.gameMenuBlock 
+{
+      width: 65px;
+}

@@ -1,0 +1,126 @@
+.marqueeBox 
+{
+      width: 800px;
+}
+
+.indexBox 
+{
+      padding: 100px 0 0 180px;
+}
+
+.infoTh
+{
+      font-size: 30px;
+}
+
+.infoTd, .infoTf 
+{
+      font-size: 25px;
+}
+
+.WindowTit
+{
+      font-size: 35px;
+}
+
+.WindowCancelTd.record
+{
+	padding: 0;
+}
+
+.WindowSelTd
+{
+	padding: 0 20px 0 0;
+}
+
+/**    倒數      **/
+.gameTimeBox.active
+{
+	left: 270px;
+}
+
+.gameTimeBlock
+{
+	width: 90px;
+	height: 90px;
+	margin: 0 auto 15px;
+}
+
+.gameTime
+{
+	width: 80px;
+	height: 80px;
+}
+
+.gameTimeTxt
+{
+	font-size: 35px;
+}
+
+.gameTotalBet
+{
+	padding: 10px 10px;
+}
+
+.gameTotalBetTxt
+{
+	font-size: 18px;
+}
+
+/*****     會員中心     *****/
+.centerBox
+{
+	padding: 20px 15px 20px 250px;
+}
+
+.centerImgBlock
+{
+	width: 180px;
+	height: 180px;
+}
+
+.centerImg
+{
+	width: 180px;
+}
+
+.centerImgEdtBox
+{
+	width: 60px;
+	height: 60px;
+}
+
+.centerImgEdt
+{
+	font-size: 25px;
+	width: 60px;
+	height: 60px;
+}
+
+.centerInfoTit
+{
+	font-size: 35px;
+}
+
+.changeImgBlock
+{
+	width: calc(100% - 20px);
+}
+
+/*****     index     *****/
+.indexGameContImg
+{
+	width: 100px;
+}
+
+/*     棋盤路     */
+.indexGameContbig
+{
+	width: calc((400% - 400px)/9);
+}
+
+/*     其他路     */
+.indexGameContSmall
+{
+	width: calc((500% - 500px)/9);
+}

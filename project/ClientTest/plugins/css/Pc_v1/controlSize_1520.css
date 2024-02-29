@@ -1,0 +1,27 @@
+.marqueeBox 
+{
+      width: 900px;
+}
+
+.indexBox 
+{
+      padding: 100px 0 0 180px;
+}
+
+/*****     index     *****/
+.indexGameContImg
+{
+	width: 120px;
+}
+
+/*     棋盤路     */
+.indexGameContbig
+{
+	width: calc((400% - 480px)/9);
+}
+
+/*     其他路     */
+.indexGameContSmall
+{
+	width: calc((500% - 600px)/9);
+}

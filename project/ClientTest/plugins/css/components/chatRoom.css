@@ -1,0 +1,223 @@
+/*     客服聊天室     */
+.chaDonBox
+{
+	background: #1A1A1A;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 9;
+	width: 15.63vw;
+	height: 100%;
+	float: right;
+}
+
+.chatroomBox
+{
+	height: 100%;
+}
+
+.chatroomContBox
+{
+	height: calc(100% - 85px);
+	padding: 25px 15px 20px;
+}
+
+.chatroomChatBox
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.chatroomAnchorBox 
+{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: unset;
+	max-height: 100%;
+	overflow-y: auto;
+}
+
+.chatroomAnchorBox::-webkit-scrollbar
+{
+	display: none;
+}
+
+.chatroomChatBlock
+{
+	width: calc(100% - 46px);
+}
+
+.chatroomChatBlock:not(:last-child)
+{
+	margin-bottom: 10px;
+}
+
+.chatroomChatBlock.Right
+{
+	margin-left: 40px;
+	text-align: right;
+}
+
+.chatroomCont
+{
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,.3);
+	border-radius: 5px;
+	position: relative;
+	max-width: 100%;
+	word-break: break-all;
+}
+
+.chatroomChatBlock.Left .chatroomCont
+{
+	background: #D8B87A;
+	margin-right: 5px;
+}
+
+.chatroomChatBlock.Right .chatroomCont
+{
+	background: #F2F2F2;
+	text-align: left;
+}
+
+.chatroomCont::after
+{
+	width: 0;
+	height: 0;
+	content: '';
+	position: absolute;	
+	border-style: solid;
+	z-index: 2;
+	top: 7px;
+}
+
+.chatroomChatBlock.Left .chatroomCont::after
+{
+	border-color: transparent #D8B87A transparent transparent;
+	border-width: 5px 8px 5px 0;	
+	left: -6px;
+}
+
+.chatroomChatBlock.Right .chatroomCont::after
+{	
+	border-color: transparent transparent transparent #F2F2F2;
+	border-width: 5px 0 5px 8px;
+	right: -6px;
+}
+
+.chatroomContTxt
+{
+	color: black;
+	padding: 6px 5px;
+}
+
+.chatroomChatBlock.Right .chatroomContTxt
+{
+	text-align: right;
+}
+
+.chatroomContImg
+{
+	width: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.chatroomChatBlock.Right .chatroomContImg
+{
+	margin: 0 0 0 auto;
+}
+
+.chatroomSendBox
+{
+	background: black;
+	border-top: 1px solid #5e5e5e;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 9;
+}
+
+.chatroomSendBox
+{
+	width: 100%;
+}
+
+.chatroomSendTable
+{
+	width: 100%;
+}
+
+.chatroomSendTd
+{
+	padding: 15px 10px;
+}
+
+.chatroomSendTd.btn
+{
+	width: 60px;
+	padding: 15px 0 15px 0;
+}
+
+.chatroomSendText
+{
+	background: white;
+	border-radius: 30px;
+	position: relative;
+}
+
+.chatroomIcon
+{
+	color: #210E03;
+	font-size: 35px;
+	position: absolute;
+	top: calc(50% - 2px);
+	right: 5px;
+	transform: translateY(-50%);
+	z-index: 1;
+	cursor: pointer;
+}
+
+.chatroomSendText textarea
+{
+	width: calc(100% - 35px);
+	font-size: 16px;
+	display: block;
+	padding: 3px 15px;
+	min-height: 30px;
+}
+
+.chatroomSendText textarea::-webkit-scrollbar
+{
+	display: none;
+}
+
+.chatroomSendText textarea::placeholder
+{
+	color: #808080;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.sendBtnBlock
+{
+	width: 50px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.sendBtnHover
+{
+	display: none;
+}
+
+.sendBtnBlock.PC:hover .sendBtn
+{
+	display: none;
+}
+
+.sendBtnBlock.PC:hover .sendBtnHover
+{
+	display: block;
+}

@@ -1,0 +1,528 @@
+/*****     共同     *****/
+.Ipt input , .Sel select , .Textarea textarea
+{
+	font-size: 22px;
+}
+
+.Ipt input::placeholder
+{
+	font-size: 18px;
+}
+
+/*     彈窗     */
+.WindowContainer
+{
+	width: calc(100% - 150px);
+}
+
+.WindowTit
+{
+	font-size: 25px;
+}
+
+.WindowCancelTd
+{
+	width: 50px;
+}
+
+.WindowCancel
+{
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+}
+
+/*****     共用零件     *****/
+/*     按鈕     */
+.submitBtn
+{
+	min-width: 200px;
+}
+
+.submitBtnTxt
+{
+	font-size: 23px;
+	padding: 15px 5px;
+}
+
+/*     大外框     */
+.Container.NoMenu
+{
+	padding: 157px 20px 131px;
+}
+
+.ContainerHasMenu
+{
+	padding: 0 20px 0;
+}
+
+/*     子選單     */
+.MenuTit
+{
+	font-size: 22px;
+	padding: 25px 25px;
+}
+
+/*****     登入     *****/
+.loginContainer
+{
+	width: 600px;
+}
+
+.loginIptBox
+{
+	margin: 0 0 80px 0;
+}
+
+.loginIptBlock input
+{
+	font-size: 22px;
+}
+
+.loginIptBlock input::placeholder
+{
+	font-size: 22px;
+}
+
+.loginIptBlock:not(:last-child)
+{
+	margin: 0 0 50px 0;
+}
+
+.bigBtnBlock
+{
+	width: 300px;
+}
+
+.bigBtnTxt
+{
+	font-size: 22px;
+}
+
+/*****     index     *****/
+/*     上方資訊     */
+.indexRoomBoxTxt
+{
+	font-size: 16px;
+}
+
+/*     倒數     */
+.indexCountInner
+{
+	font-size: 16px;
+}
+
+/*     圖     */
+.indexGameContImg
+{
+	width: 240px;
+}
+
+.indexGameImgTxt
+{
+	font-size: 16px;
+}
+
+/*     大小路     */
+.indexDataBox
+{
+	width: calc(100% - 240px);
+}
+
+/*     下方總結資訊     */
+.indexGameInfoTit
+{
+	font-size: 16px;
+}
+
+.indexGameInfoVal
+{
+	width: 35px;
+	height: 35px;
+}
+
+.indexGameInfoValTxt
+{
+	font-size: 16px;
+}
+
+/*****     下注     *****/
+/*    選單      */
+.betMenuBlock
+{
+	width: 70px;
+}
+
+.betMenuSubBox
+{
+	top: 75px;
+}
+
+/*      下注區塊      */
+.betArea
+{
+	padding: 10px 0;
+}
+
+.betAreaTit
+{
+	font-size: 24px;
+	margin: 0 0 15px 0;
+}
+
+.betAreaRate
+{
+	font-size: 16px;	
+}
+
+.betAreaCoinBox
+{
+	padding: 5px;
+	width: calc(100% - 60px);
+	margin: 10px auto;
+}
+
+.betAreaCoinIcon
+{
+	font-size: 16px;
+	width: 16px;
+}
+
+.betAreaCoinVal
+{
+	width: calc(100% - 20px);
+	font-size: 16px;
+}
+
+/*****     下注區塊 (下注+開牌顯示)     *****/
+/*    開牌區      */
+.betFinalInner
+{
+	width: 400px;
+}
+
+/*    錢包 關注 下注區塊      */
+.betContainer
+{
+	width: calc(100% - 200px);
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.moneyIcon
+{
+	font-size: 16px;
+}
+
+.moneyTxt
+{
+	font-size: 16px;
+}
+
+.loveIcon
+{
+	font-size: 16px;
+}
+
+.loveTxt
+{
+	font-size: 16px;
+}
+
+.loveName
+{
+	font-size: 16px;
+}
+
+/*    籌碼      */
+.betCoinBox
+{
+	width: calc(100% - 250px);
+	padding: 5px 125px;
+}
+
+.betCoinBtn
+{
+	margin: 0 10px;
+}
+
+/*    控制區      */
+.betCtrlBtnIconTxt
+{
+	font-size: 16px;
+}
+
+/*     各項統計     */
+.gameAnalyItemBox
+{
+	width: calc(100% - 210px);
+}
+.gameAnalyItemTxt
+{
+	font-size: 16px;
+}
+
+.gameAnalyItemVal
+{
+	font-size: 16px;
+}
+
+/*     問路區塊     */
+.gameAnalyAskBox
+{
+	width: 200px;
+}
+.gameAskTypeTit
+{
+	font-size: 16px;
+}
+
+/*****     聲音     *****/
+.soundTable
+{
+	border-spacing: 60px 20px;
+}
+
+.soundTitIcon
+{
+	font-size: 22px;
+}
+
+.soundTit
+{
+	font-size: 22px;
+}
+
+.soundSwitchTd
+{
+	width: 180px;
+}
+
+.soundSwitchTxt
+{
+	font-size: 22px;
+}
+
+/*****     網路     *****/
+.netBox
+{
+	padding: 20px 40px 0;
+	margin: 0 0 60px 0;
+}
+
+.netBlock
+{
+	padding: 15px 5px;
+}
+
+.netBlock:not(:last-child)
+{
+	margin: 0 0 30px 0;
+}
+
+.netTxt
+{
+	font-size: 20px;
+}
+
+.netIcon
+{
+	width: 25px;
+	height: 25px;
+}
+
+/*****     籌碼     *****/
+.coinBoxTxt
+{
+	font-size: 22px;
+}
+
+.checkBlock
+{
+	width: 35px;
+	height: 35px;
+}
+
+.checkBlock input[type="checkbox"]
+{
+	width: 35px;
+	height: 35px;
+}
+
+.checkBlock input[type="checkbox"]::after
+{
+	width: 16px;
+	height: 7px;
+	top: calc(50% - 8px);
+	left: calc(50% - 8px);
+}
+
+/*****     下注     *****/
+.betCheckBox .WindowTit
+{
+	font-size: 22px;
+}
+
+/*****     會員中心     *****/
+.centerBox
+{
+	padding: 30px 60px 0;
+}
+
+.centerLevelBox
+{
+	margin: 0 0 20px 0;
+}
+
+.centerLevelIcon
+{
+	width: 35px;
+}
+
+.centerLevelTxt
+{
+	font-size: 20px;
+}
+
+.centerImgBox
+{
+	margin: 0 0 80px 0;
+}
+
+.centerImgBlock
+{
+	width: 130px;
+	height: 130px;
+}
+
+.centerImgEdtBox
+{
+	width: 45px;
+	height: 45px;
+}
+
+.centerImgEdt
+{
+	font-size: 18px;
+	width: 45px;
+	height: 45px;
+}
+
+.centerInfoBlock
+{
+	margin: 0 0 60px 0;
+}
+
+.centerInfoTitTd
+{
+	font-size: 22px;
+	width: 120px;
+}
+
+.centerInfoTit
+{
+	font-size: 22px;
+}
+
+.centerInfoTxtBox
+{
+	padding: 0 0 10px 0;
+}
+
+.centerInfoTxtTd, .centerInfoNum
+{
+	font-size: 22px;
+}
+
+.centerInfoIcon
+{
+	font-size: 25px;
+	width: 35px;
+}
+
+/**     更換頭像     **/
+.changeImgTr:not(:last-child) .changeImgTd
+{
+	padding: 0 0 40px;
+}
+
+.changeImgBg
+{
+	width: 100px;
+	height: 100px;
+}
+
+.changeImgBlock
+{
+	width: 90px;
+	height: 90px;
+}
+
+/*****     排行榜     *****/
+.rankTable
+{
+	font-size: 20px;
+	border-spacing: 0 25px;
+}
+
+.rankTh
+{
+	font-size: 20px;
+}
+
+.rankTable td
+{
+	height: 60px;
+}
+
+.rankIconTd
+{
+	width: 60px;
+}
+
+.rankIcon
+{
+	width: 60px;
+}
+
+/*****     語言     *****/
+.langTit
+{
+	font-size: 22px;
+}
+
+/*****     紀錄     *****/
+.WindowTopTd.record
+{
+	width: 150px;
+}
+
+.recordSelTd:not(:last-child)
+{
+	padding: 0 15px 0 0;
+}
+
+.recordSelBlock
+{
+	padding: 10px 5px;
+}
+
+.recordSelTxt
+{
+	font-size: 19px;
+}
+
+.infoTh
+{
+	font-size: 19px;
+}
+
+.infoTh:not(:last-child)
+{
+	padding: 10px 5px 10px 0;
+}
+
+.infoTd, .infoTf
+{
+	font-size: 18px;
+}

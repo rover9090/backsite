@@ -1,0 +1,243 @@
+/*
+	2020/10/12
+*/
+body
+{
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+}
+
+
+button , select , input[type="radio"] , input[type="checkbox"] ,
+input[type="submit"] , label , a
+{
+	cursor: pointer;
+}
+
+input[type="number"]
+{
+	-moz-appearance:textfield;
+}
+
+input::placeholder
+{
+	font-size: 16px;
+}
+
+/*****     Class     *****/
+.Notice
+{
+	color: red;
+	display: none;
+	font-size: 13px;
+	text-align: left;
+}
+
+.NoData /* 沒有資料 */
+{
+	text-align: center;
+	font-size: 15px;
+}
+
+/*****     共同     *****/
+/*     input select textarea     */
+.Ipt , .Sel , .Textarea
+{
+	border-radius: 5px;
+	width: 100%;
+}
+
+.Ipt input , .Sel select , .Textarea textarea
+{
+	font-size: 13px;
+	display: block;
+	width: 100%;
+	padding: 0 0 0 10px;
+	min-height: 30px;
+}
+
+.Ipt input::placeholder
+{
+	color: #BEBEBE;
+	font-size: 12px;
+}
+
+.Sel
+{
+	position: relative;
+}
+
+.SelDecro
+{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	pointer-events: none;
+	width: 32px;
+	height: 31px;
+}
+
+.SelDecro::after
+{
+	border-top: 7px solid #BEBEBE;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	width: 0;
+	height: 0;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+}
+
+.Textarea textarea
+{
+	color: #434343;
+	width: calc(100%);
+	padding: 10px;
+	min-height: 80px;
+	resize: vertical;
+}
+
+/*     箭頭 ( > )     */
+.AfterArrow
+{
+	border-top: 2px solid white;
+	border-right: 2px solid white;	
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+.AfterArrow.right
+{
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+/*     彈窗     */
+.WindowBox
+{
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	display: none;
+}
+
+.WindowBox.active
+{
+	display: block;
+}
+
+.WindowContainer
+{
+	background: #F5F4F1;
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,0.6);
+	position: absolute;
+	width: calc(100% - 40px);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 13;
+}
+
+.WindowTop
+{
+	background: #837569;
+	width: 100%;
+	padding: 8px 20px;
+	border-collapse: separate;
+}
+
+.WindowTit
+{
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.WindowX
+{
+	color: white;
+	text-align: right;
+	font-size: 15px;
+	width: 15px;
+}
+
+.WindowContent
+{
+	width: calc(100% - 40px);
+	padding: 20px 20px 0 20px;
+	margin: 0 0 20px 0;
+	word-break: break-all;
+	max-height: 60vh;
+	min-height: 25vh;
+	overflow-y: scroll;
+	display: none;
+}
+
+.WindowContent.active
+{
+	display: block;
+}
+
+.WindowBtnTable
+{
+	border-collapse: separate;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.WindowBtnTd
+{
+	background: linear-gradient(to bottom, #F9D5B4 0%,#F5C79C 5%,#F0B479 10%,#EEAD6C 15%,#E18B49 45%,#DE8946 50%,#C2752D 100%);
+	box-shadow: 0 2px 0 0 #A4511C;
+}
+
+.WindowBtnTxt
+{
+	
+	color: white;
+	text-shadow: 0 1px 0 #77370E;
+	display: inline-block;
+	min-width: 50px;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 20px 0;
+	margin: -4px 0 0 0;
+}
+
+.WindowBg
+{
+	width: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 12;
+}
+
+/*     按鈕     */
+.BtnAny
+{
+	background: linear-gradient(to right, #EA76AC 0%,#7B73F2 100%);
+	color: white;
+	padding: 5px 0;
+	min-width: 110px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	text-align: center;
+}

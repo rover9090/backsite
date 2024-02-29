@@ -1,0 +1,156 @@
+/*****     共用零件     *****/
+.LftTop
+{
+	top: 0px;
+}
+
+.LftBot
+{
+	bottom: 0px;
+}
+
+.RgtTop
+{
+	top: 0px;
+}
+
+.RgtBot
+{
+	bottom: 0px;
+}
+
+/*     子選單     */
+.MenuTd::after
+{
+	height: 5px;
+}
+
+.MenuTit
+{
+	font-size: 14px;
+	padding: 15px 15px;
+}
+
+/*     大外框     */
+/* .Container
+{
+	padding: 91px 0 80px;
+} */
+
+.Container.NoMenu
+{
+	padding: 91px 5px 80px;
+}
+
+.ContainerHasMenu
+{
+	padding: 0 5px 0;
+}
+
+/*****     Header     *****/
+.headerlogoutBox
+{
+	width: 130px;
+}
+
+.headerImgBox
+{
+	right: -20px;
+}
+
+.headerRecordBox
+{
+	width: 60px;
+}
+
+.headerRecordBtn
+{
+	width: 50px;
+	margin: 0 auto;
+}
+
+/*****     下注區塊 (下注+開牌顯示)     *****/
+/*        開牌區1      */
+.betFinal1Card , .gambleVerCard
+{
+	width: 42px;
+    	height: 56px;
+}
+
+/*****     限額     *****/
+.limitSetTxt
+{
+	font-size: 14px;
+}
+
+/*****     聲音     *****/
+.WindowContent .soundBox .soundTable
+{
+      border-spacing: 20px 20px;
+}
+
+/*****     關注     *****/
+.attentionBlock:not(:last-child)
+{
+	margin: 0 0 35px auto;
+}
+
+.attentionImg
+{
+	width: 60px;
+	height: 60px;
+      left: -30px;
+}
+
+.attentionImg img
+{
+	width: 60px;
+	height: 60px;
+}
+
+.attentionTable
+{
+	font-size: 14px;
+}
+
+.attentionIcon
+{
+	width: 25px;
+	height: 25px;
+}
+
+/*****     紀錄     *****/
+.recordSelTxt
+{
+	font-size: 14px;
+}
+
+.infoTh
+{
+	font-size: 14px;
+}
+
+.infoTd, .infoTf
+{
+	font-size: 12px;
+}
+
+.infoTd
+{
+	padding: 10px 0;
+}
+
+.infoTd:not(:last-child)
+{
+	padding: 10px 5px 10px 0;
+}
+
+.infoTf
+{
+	padding: 10px 0;
+}
+
+.infoTf:not(:last-child)
+{
+	padding: 10px 10px 10px 0;
+}

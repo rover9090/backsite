@@ -1,0 +1,67 @@
+#rewrite ^/(.*)/$ /$1 redirect;
+
+# 使用./或是../  在rewrite可以  但是if不行
+set $flag 0;
+set $route 0;
+set $routecut 0;
+# $request_filename = /var/www/html/gino/composer/laravel/public/index.php
+# $request_uri = /gino/composer/laravel/public/ (nginx中必加斜線)
+
+if ($request_uri ~ .+\?.+\d+$){
+    #return 404;
+}
+# 如果找不到檔案路徑,資料夾不存在
+if (!-d $request_filename){
+    set $flag "${flag}1";
+}
+# 針對網址做解析 必定進入
+#if ($request_uri ~ (.*)/(.+)/?$){
+#    set $flag "${flag}2";
+#    set $route "$1/$2";
+#    set $routecut "$1/";
+#    #return 404;
+#}
+if ($request_uri ~ /gino/composer/laravel/public/(.+)/?$){
+    set $route "$1/";
+    set $flag "${flag}2";
+}
+# 如果找不到檔案路徑,檔案不存在
+if (!-f $request_filename){
+    set $flag "${flag}3";
+}
+# 搜尋資料夾找不到,搜尋檔案也找不到的時候,瀏覽返回上一層目錄(預設nginx吃index.php)
+if ($flag = "0123") {
+    #rewrite ^ /gino/composer/laravel/public/?$route redirect ;
+    rewrite ^ /gino/composer/laravel/public/index.php last ;
+}
+
+# htaccess只能用在apache  nginx只能用本來就能使用的if condition和rewrite 
+# $request_uri ： 包含请求参数的原始URI，不包含主机名，如/foo/bar.php?arg=baz
+# $request_filename ： 当前请求的文件路径，由root或alias指令与URI请求生成(從home出來)
+# 使用 -d， !-d 检查一个目录是否存在
+# 使用 -f ，!-f 检查一个文件是否存在
+# 使用 -e ，!-e 检查一个文件、目录、符号链接是否存在
+# 單個^不做輸入表示除了domain name吻合之後不做其他要求
+# Group Capture中使用$1,$2;RewriteCond中使用%1,%2 表示括弧()的參數
+#<IfModule mod_rewrite.c>
+#    <IfModule mod_negotiation.c>
+#        Options -MultiViews -Indexes
+#    </IfModule>
+
+
+#    RewriteEngine On
+#
+#    # Handle Authorization Header
+#    RewriteCond %{HTTP:Authorization} .
+#    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#
+#    # Redirect Trailing Slashes If Not A Folder... 如果網址最後有/但並不是資料夾則返回訪問檔案類型
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_URI} (.+)/$  # 如果url路徑找不到該資料夾且url類型是資料夾類(斜線結尾)
+#    RewriteRule ^ %1 [L,R=301] # 導回拜訪檔案 => 在nginx中會造成無窮迴圈
+#
+#    # Send Requests To Front Controller...
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_FILENAME} !-f # 如果檔案路徑找不到該資料夾且找不到該檔 則返回index
+#    RewriteRule ^ index.php [L]
+#</IfModule>

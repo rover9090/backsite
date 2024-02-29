@@ -1,0 +1,501 @@
+/*
+	2020/10/12
+*/
+body
+{
+	background: #A2A2A2;
+	touch-action: manipulation; /*不可連點*/
+}
+
+input[type="submit"] , input[type="radio"] , input[type="checkbox"] ,
+select
+{
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+input[type="radio"] , input[type="checkbox"]
+{
+	margin: 0;
+}
+
+/*****     Class     *****/
+.Notice
+{
+	color: red;
+	display: none;
+	font-size: 13px;
+	text-align: left;
+}
+
+.NoData /* 沒有資料 */
+{
+	text-align: center;
+	font-size: 15px;
+}
+
+/*****     共同     *****/
+/*     input select textarea     */
+.Ipt , .Sel , .Textarea
+{
+	border-radius: 5px;
+	width: 100%;
+}
+
+.Ipt input , .Sel select , .Textarea textarea
+{
+	font-size: 13px;
+	display: block;
+	width: 100%;
+	padding: 0 0 0 10px;
+	min-height: 30px;
+}
+
+.Ipt input::placeholder
+{
+	color: #BEBEBE;
+	font-size: 12px;
+}
+
+.Sel
+{
+	position: relative;
+}
+
+.SelDecro
+{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	pointer-events: none;
+	width: 32px;
+	height: 31px;
+}
+
+.SelDecro::after
+{
+	border-top: 7px solid #BEBEBE;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	width: 0;
+	height: 0;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+}
+
+.Textarea textarea
+{
+	color: #434343;
+	width: calc(100%);
+	padding: 10px;
+	min-height: 80px;
+	resize: vertical;
+}
+
+/*     箭頭 ( > )     */
+.AfterArrow
+{
+	border-top: 2px solid white;
+	border-right: 2px solid white;	
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+.AfterArrow.right
+{
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+/*     彈窗     */
+.WindowBox
+{
+	background: rgba(0,0,0,0.8);
+	width: 100%;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	display: none;
+}
+
+.WindowBox.active
+{
+	display: block;
+}
+
+.WindowContainer
+{
+	background: #F5F4F1;
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,0.6);
+	position: absolute;
+	width: calc(100% - 40px);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 13;
+}
+
+.WindowTop
+{
+	background: #837569;
+	width: 100%;
+	padding: 8px 20px;
+	border-collapse: separate;
+}
+
+.WindowTit
+{
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.WindowX
+{
+	color: white;
+	text-align: right;
+	font-size: 15px;
+	width: 15px;
+}
+
+.WindowContent
+{
+	width: calc(100% - 40px);
+	padding: 20px 20px 0 20px;
+	margin: 0 0 20px 0;
+	word-break: break-all;
+	max-height: 60vh;
+	min-height: 25vh;
+	overflow-y: scroll;
+	display: none;
+}
+
+.WindowContent.active
+{
+	display: block;
+}
+
+.WindowBtnTable
+{
+	border-collapse: separate;
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.WindowBtnTd
+{
+	background: linear-gradient(to bottom, #F9D5B4 0%,#F5C79C 5%,#F0B479 10%,#EEAD6C 15%,#E18B49 45%,#DE8946 50%,#C2752D 100%);
+	box-shadow: 0 2px 0 0 #A4511C;
+}
+
+.WindowBtnTxt
+{
+	
+	color: white;
+	text-shadow: 0 1px 0 #77370E;
+	display: inline-block;
+	min-width: 50px;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 20px 0;
+	margin: -4px 0 0 0;
+}
+
+.WindowBg
+{
+	width: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 12;
+}
+
+/*     按鈕     */
+.BtnAny
+{
+	background: linear-gradient(to right, #EA76AC 0%,#7B73F2 100%);
+	color: white;
+	padding: 5px 0;
+	min-width: 110px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	text-align: center;
+}
+
+/*****     框架     *****/
+.Container
+{
+	width: 100%;
+	min-height: calc(100vh - 80px);
+	padding: 0 0 80px 0;
+}
+
+.Block
+{
+	width: 100%;
+}
+
+.BlockTit
+{
+	background: linear-gradient(to bottom,rgba(255,255,255,.5) 0%,rgba(26,26,26,.5) 100%);
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+	text-align: center;
+}
+
+.BlockTitTxt
+{
+	color: white;
+	font-size: 16px;
+	padding: 8px 0;
+}
+
+.BlockContent
+{
+	padding: 7px 0;
+}
+
+/*****     籌碼     *****/
+.chipBox
+{
+	width: 100%;
+}
+
+.chipTable
+{
+	width: 100%;
+}
+
+.chipTd.active
+{
+	background: #F8EB99;
+}
+
+.chipBtn
+{
+	width: 80px;
+	margin: 0 auto;
+}
+
+/*****     下注     *****/
+.betBtnBox
+{
+	text-align: center;
+	width: 100%;
+}
+
+.betBtnTable
+{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 10px;
+	margin: -5px 0;
+}
+
+.betBtnTd
+{
+	background: #656565;
+	border: 1px solid #656565;
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+	box-sizing: border-box;
+	padding: 0;
+	border-radius: 15px;
+}
+
+.betBtnTd.active
+{
+	background: white;
+	border: 1px solid white;
+}
+
+.betBtnTd.empty
+{
+	border: unset;
+	background: unset;
+	box-shadow: unset;
+}
+
+.betBtn
+{
+	width: 100%;
+}
+
+.betBtnNum
+{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px 10px;
+}
+
+.betBtnNumImgTable
+{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.betBtnNumImg
+{
+	width: 32px;
+	padding: 0 3px;
+}
+
+.betBtnNumTxt
+{
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	width: 100%;
+	padding: 4px 0;
+}
+
+.betBtnTd.active .betBtnNumTxt
+{
+	color: #656565;
+}
+
+.betBtnOdds
+{
+	background: #A2A2A2;
+	width: 100%;
+	border-radius: 0 0 15px 15px;
+}
+
+.betBtnOddsTxt
+{
+	color: #656565;
+	font-size: 16px;
+	width: 100%;
+	padding: 2px 0;
+}
+
+.betBtnTd.active .betBtnOddsTxt
+{
+	color: white;
+}
+
+/*****     Footer     *****/
+footer
+{
+	background: linear-gradient(to bottom, #828282 0%,#1D1D1D 100%);
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 30;
+}
+
+.footerContainer
+{
+	width: 100%;
+	padding: 11px 0;
+}
+
+.footerTable
+{
+	width: 100%;
+}
+
+.footerTdAmount
+{
+	padding: 0 0 0 10px;
+	min-width: calc(100% - 220px);
+}
+
+.footerAmountTable
+{
+	background: black;
+	border-radius: 10px;
+	width: 100%;
+	border-collapse: separate;
+	padding: 8px 5px;
+}
+
+.footerAmountTdTit
+{
+	font-size: 16px;
+	min-width: 54px;
+}
+
+.footerAmountTdTit , .footerAmountTdNum
+{
+	padding: 0;
+}
+
+.footerAmountTit
+{
+	color: white;
+}
+
+.footerAmountNum
+{
+	color: #CCB834;
+	font-size: 16px;
+}
+
+.footerTdBtn
+{
+	width: 220px;
+	padding: 0;
+}
+
+.footerBtnTable
+{
+	border-collapse: separate;
+	border-spacing: 10px 0;
+	margin: 0 0 0 auto;
+}
+
+.footerBtnTd
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	width: 80px;
+	border-radius: 10px;
+	padding: 0;
+}
+
+.footerBtnTd.clear
+{
+	background: linear-gradient(to bottom, #FF8585 0%,#BB0E0E 100%);
+}
+
+.footerBtnTd.confirm
+{
+	background: linear-gradient(to bottom, #5FF27D 0%,#00811A 100%);
+}
+
+.footerBtn
+{
+	width: 100%;
+	text-align: center;
+}
+
+.footerBtnTxt
+{
+	font-size: 16px;
+	padding: 13px 0;
+}
+
+.footerBtnTd.clear .footerBtnTxt
+{
+	color: white;
+}
+
+.footerBtnTd.confirm .footerBtnTxt
+{
+	color: white;
+}
